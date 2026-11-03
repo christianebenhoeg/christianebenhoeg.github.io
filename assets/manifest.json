@@ -1,0 +1,1123 @@
+{
+  "version": 2,
+  "terrain": {
+    "file": "terrain/ground.jpg",
+    "source": "art/render_terrain.py",
+    "cell": 24,
+    "origin": [
+      -44,
+      -40
+    ],
+    "size": [
+      100,
+      100
+    ]
+  },
+  "scenery": {
+    "oak-a": {
+      "source": "art/render_scenery.py",
+      "kind": "broadleaf",
+      "file": "scenery/oak-a.png",
+      "w": 375,
+      "h": 276,
+      "anchorX": 117.0,
+      "anchorY": 249.8,
+      "scale": 0.8
+    },
+    "oak-b": {
+      "source": "art/render_scenery.py",
+      "kind": "broadleaf",
+      "file": "scenery/oak-b.png",
+      "w": 312,
+      "h": 241,
+      "anchorX": 89.0,
+      "anchorY": 223.5,
+      "scale": 0.8
+    },
+    "pine-a": {
+      "source": "art/render_scenery.py",
+      "kind": "conifer",
+      "file": "scenery/pine-a.png",
+      "w": 284,
+      "h": 291,
+      "anchorX": 69.0,
+      "anchorY": 259.7,
+      "scale": 0.8
+    },
+    "pine-b": {
+      "source": "art/render_scenery.py",
+      "kind": "conifer",
+      "file": "scenery/pine-b.png",
+      "w": 226,
+      "h": 231,
+      "anchorX": 53.0,
+      "anchorY": 207.8,
+      "scale": 0.8
+    },
+    "bush-a": {
+      "source": "art/render_scenery.py",
+      "kind": "bush",
+      "file": "scenery/bush-a.png",
+      "w": 112,
+      "h": 88,
+      "anchorX": 48.0,
+      "anchorY": 61.8,
+      "scale": 0.8
+    },
+    "bush-b": {
+      "source": "art/render_scenery.py",
+      "kind": "bush",
+      "file": "scenery/bush-b.png",
+      "w": 74,
+      "h": 52,
+      "anchorX": 30.0,
+      "anchorY": 34.8,
+      "scale": 0.8
+    },
+    "rock-a": {
+      "source": "art/render_scenery.py",
+      "kind": "rock",
+      "file": "scenery/rock-a.png",
+      "w": 113,
+      "h": 70,
+      "anchorX": 52.0,
+      "anchorY": 45.8,
+      "scale": 0.8
+    },
+    "rock-b": {
+      "source": "art/render_scenery.py",
+      "kind": "rock",
+      "file": "scenery/rock-b.png",
+      "w": 73,
+      "h": 48,
+      "anchorX": 33.0,
+      "anchorY": 27.8,
+      "scale": 0.8
+    },
+    "rock-c": {
+      "source": "art/render_scenery.py",
+      "kind": "rock",
+      "file": "scenery/rock-c.png",
+      "w": 170,
+      "h": 118,
+      "anchorX": 79.0,
+      "anchorY": 70.8,
+      "scale": 0.8
+    }
+  },
+  "units": {
+    "swordsman": {
+      "source": "art/units/swordsman.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/swordsman-idle.webp",
+          "mask": "units/swordsman-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/swordsman-walk.webp",
+          "mask": "units/swordsman-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/swordsman-attack.webp",
+          "mask": "units/swordsman-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/swordsman-die.webp",
+          "mask": "units/swordsman-die-mask.webp"
+        }
+      }
+    },
+    "pikeman": {
+      "source": "art/units/pikeman.py",
+      "actions": {
+        "idle": {
+          "w": 224,
+          "h": 224,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 112.0,
+          "anchorY": 165.4,
+          "scale": 0.8,
+          "file": "units/pikeman-idle.webp",
+          "mask": "units/pikeman-idle-mask.webp"
+        },
+        "walk": {
+          "w": 224,
+          "h": 224,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 112.0,
+          "anchorY": 165.4,
+          "scale": 0.8,
+          "file": "units/pikeman-walk.webp",
+          "mask": "units/pikeman-walk-mask.webp"
+        },
+        "attack": {
+          "w": 224,
+          "h": 224,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 112.0,
+          "anchorY": 165.4,
+          "scale": 0.8,
+          "file": "units/pikeman-attack.webp",
+          "mask": "units/pikeman-attack-mask.webp"
+        },
+        "die": {
+          "w": 224,
+          "h": 224,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 112.0,
+          "anchorY": 165.4,
+          "scale": 0.8,
+          "file": "units/pikeman-die.webp",
+          "mask": "units/pikeman-die-mask.webp"
+        }
+      }
+    },
+    "archer": {
+      "source": "art/units/archer.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/archer-idle.webp",
+          "mask": "units/archer-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/archer-walk.webp",
+          "mask": "units/archer-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/archer-attack.webp",
+          "mask": "units/archer-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/archer-die.webp",
+          "mask": "units/archer-die-mask.webp"
+        }
+      }
+    },
+    "skirmisher": {
+      "source": "art/units/skirmisher.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/skirmisher-idle.webp",
+          "mask": "units/skirmisher-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/skirmisher-walk.webp",
+          "mask": "units/skirmisher-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/skirmisher-attack.webp",
+          "mask": "units/skirmisher-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/skirmisher-die.webp",
+          "mask": "units/skirmisher-die-mask.webp"
+        }
+      }
+    },
+    "knight": {
+      "source": "art/units/knight.py",
+      "actions": {
+        "idle": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/knight-idle.webp",
+          "crest": "units/knight-idle-crest.webp",
+          "mask": "units/knight-idle-mask.webp"
+        },
+        "walk": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/knight-walk.webp",
+          "crest": "units/knight-walk-crest.webp",
+          "mask": "units/knight-walk-mask.webp"
+        },
+        "attack": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/knight-attack.webp",
+          "crest": "units/knight-attack-crest.webp",
+          "mask": "units/knight-attack-mask.webp"
+        },
+        "die": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/knight-die.webp",
+          "crest": "units/knight-die-crest.webp",
+          "mask": "units/knight-die-mask.webp"
+        }
+      }
+    },
+    "mangonel": {
+      "source": "art/units/mangonel.py",
+      "actions": {
+        "idle": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 131.6,
+          "scale": 0.8,
+          "file": "units/mangonel-idle.webp",
+          "mask": "units/mangonel-idle-mask.webp"
+        },
+        "walk": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 131.6,
+          "scale": 0.8,
+          "file": "units/mangonel-walk.webp",
+          "mask": "units/mangonel-walk-mask.webp"
+        },
+        "attack": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 131.6,
+          "scale": 0.8,
+          "file": "units/mangonel-attack.webp",
+          "mask": "units/mangonel-attack-mask.webp"
+        },
+        "die": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 131.6,
+          "scale": 0.8,
+          "file": "units/mangonel-die.webp",
+          "mask": "units/mangonel-die-mask.webp"
+        }
+      }
+    },
+    "scorpion": {
+      "source": "art/units/scorpion.py",
+      "actions": {
+        "idle": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 123.7,
+          "scale": 0.8,
+          "file": "units/scorpion-idle.webp",
+          "mask": "units/scorpion-idle-mask.webp"
+        },
+        "walk": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 123.7,
+          "scale": 0.8,
+          "file": "units/scorpion-walk.webp",
+          "mask": "units/scorpion-walk-mask.webp"
+        },
+        "attack": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 123.7,
+          "scale": 0.8,
+          "file": "units/scorpion-attack.webp",
+          "mask": "units/scorpion-attack-mask.webp"
+        },
+        "die": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 123.7,
+          "scale": 0.8,
+          "file": "units/scorpion-die.webp",
+          "mask": "units/scorpion-die-mask.webp"
+        }
+      }
+    },
+    "ram": {
+      "source": "art/units/ram.py",
+      "actions": {
+        "idle": {
+          "w": 240,
+          "h": 240,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 120.0,
+          "anchorY": 157.6,
+          "scale": 0.8,
+          "file": "units/ram-idle.webp",
+          "mask": "units/ram-idle-mask.webp"
+        },
+        "walk": {
+          "w": 240,
+          "h": 240,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 120.0,
+          "anchorY": 157.6,
+          "scale": 0.8,
+          "file": "units/ram-walk.webp",
+          "mask": "units/ram-walk-mask.webp"
+        },
+        "attack": {
+          "w": 240,
+          "h": 240,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 120.0,
+          "anchorY": 157.6,
+          "scale": 0.8,
+          "file": "units/ram-attack.webp",
+          "mask": "units/ram-attack-mask.webp"
+        },
+        "die": {
+          "w": 240,
+          "h": 240,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 120.0,
+          "anchorY": 157.6,
+          "scale": 0.8,
+          "file": "units/ram-die.webp",
+          "mask": "units/ram-die-mask.webp"
+        }
+      }
+    },
+    "trebuchet": {
+      "source": "art/units/trebuchet.py",
+      "actions": {
+        "idle": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-idle.webp",
+          "mask": "units/trebuchet-idle-mask.webp"
+        },
+        "walk": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-walk.webp",
+          "mask": "units/trebuchet-walk-mask.webp"
+        },
+        "attack": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-attack.webp",
+          "mask": "units/trebuchet-attack-mask.webp"
+        },
+        "die": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-die.webp",
+          "mask": "units/trebuchet-die-mask.webp"
+        },
+        "unpackedIdle": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-unpackedIdle.webp",
+          "mask": "units/trebuchet-unpackedIdle-mask.webp"
+        },
+        "unpackedDie": {
+          "w": 320,
+          "h": 320,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 160.0,
+          "anchorY": 259.0,
+          "scale": 0.8,
+          "file": "units/trebuchet-unpackedDie.webp",
+          "mask": "units/trebuchet-unpackedDie-mask.webp"
+        }
+      }
+    },
+    "twoHandedSwordsman": {
+      "source": "art/units/twoHandedSwordsman.py",
+      "actions": {
+        "idle": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 119.6,
+          "scale": 0.8,
+          "file": "units/twoHandedSwordsman-idle.webp",
+          "mask": "units/twoHandedSwordsman-idle-mask.webp"
+        },
+        "walk": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 119.6,
+          "scale": 0.8,
+          "file": "units/twoHandedSwordsman-walk.webp",
+          "mask": "units/twoHandedSwordsman-walk-mask.webp"
+        },
+        "attack": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 119.6,
+          "scale": 0.8,
+          "file": "units/twoHandedSwordsman-attack.webp",
+          "mask": "units/twoHandedSwordsman-attack-mask.webp"
+        },
+        "die": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 119.6,
+          "scale": 0.8,
+          "file": "units/twoHandedSwordsman-die.webp",
+          "mask": "units/twoHandedSwordsman-die-mask.webp"
+        }
+      }
+    },
+    "halberdier": {
+      "source": "art/units/halberdier.py",
+      "actions": {
+        "idle": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/halberdier-idle.webp",
+          "mask": "units/halberdier-idle-mask.webp"
+        },
+        "walk": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/halberdier-walk.webp",
+          "mask": "units/halberdier-walk-mask.webp"
+        },
+        "attack": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/halberdier-attack.webp",
+          "mask": "units/halberdier-attack-mask.webp"
+        },
+        "die": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/halberdier-die.webp",
+          "mask": "units/halberdier-die-mask.webp"
+        }
+      }
+    },
+    "arbalester": {
+      "source": "art/units/arbalester.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/arbalester-idle.webp",
+          "mask": "units/arbalester-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/arbalester-walk.webp",
+          "mask": "units/arbalester-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/arbalester-attack.webp",
+          "mask": "units/arbalester-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/arbalester-die.webp",
+          "mask": "units/arbalester-die-mask.webp"
+        }
+      }
+    },
+    "lightCavalry": {
+      "source": "art/units/lightCavalry.py",
+      "actions": {
+        "idle": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/lightCavalry-idle.webp",
+          "mask": "units/lightCavalry-idle-mask.webp"
+        },
+        "walk": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/lightCavalry-walk.webp",
+          "mask": "units/lightCavalry-walk-mask.webp"
+        },
+        "attack": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/lightCavalry-attack.webp",
+          "mask": "units/lightCavalry-attack-mask.webp"
+        },
+        "die": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/lightCavalry-die.webp",
+          "mask": "units/lightCavalry-die-mask.webp"
+        }
+      }
+    },
+    "camelRider": {
+      "source": "art/units/camelRider.py",
+      "actions": {
+        "idle": {
+          "w": 208,
+          "h": 208,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 104.0,
+          "anchorY": 155.5,
+          "scale": 0.8,
+          "file": "units/camelRider-idle.webp",
+          "mask": "units/camelRider-idle-mask.webp"
+        },
+        "walk": {
+          "w": 208,
+          "h": 208,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 104.0,
+          "anchorY": 155.5,
+          "scale": 0.8,
+          "file": "units/camelRider-walk.webp",
+          "mask": "units/camelRider-walk-mask.webp"
+        },
+        "attack": {
+          "w": 208,
+          "h": 208,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 104.0,
+          "anchorY": 155.5,
+          "scale": 0.8,
+          "file": "units/camelRider-attack.webp",
+          "mask": "units/camelRider-attack-mask.webp"
+        },
+        "die": {
+          "w": 208,
+          "h": 208,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 104.0,
+          "anchorY": 155.5,
+          "scale": 0.8,
+          "file": "units/camelRider-die.webp",
+          "mask": "units/camelRider-die-mask.webp"
+        }
+      }
+    },
+    "cavalryArcher": {
+      "source": "art/units/cavalryArcher.py",
+      "actions": {
+        "idle": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/cavalryArcher-idle.webp",
+          "mask": "units/cavalryArcher-idle-mask.webp"
+        },
+        "walk": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/cavalryArcher-walk.webp",
+          "mask": "units/cavalryArcher-walk-mask.webp"
+        },
+        "attack": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/cavalryArcher-attack.webp",
+          "mask": "units/cavalryArcher-attack-mask.webp"
+        },
+        "die": {
+          "w": 192,
+          "h": 192,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 96.0,
+          "anchorY": 139.5,
+          "scale": 0.8,
+          "file": "units/cavalryArcher-die.webp",
+          "mask": "units/cavalryArcher-die-mask.webp"
+        }
+      }
+    },
+    "monk": {
+      "source": "art/units/monk.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/monk-idle.webp",
+          "mask": "units/monk-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/monk-walk.webp",
+          "mask": "units/monk-walk-mask.webp"
+        },
+        "heal": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/monk-heal.webp",
+          "mask": "units/monk-heal-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/monk-die.webp",
+          "mask": "units/monk-die-mask.webp"
+        }
+      }
+    },
+    "longbowman": {
+      "source": "art/units/longbowman.py",
+      "actions": {
+        "idle": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/longbowman-idle.webp",
+          "mask": "units/longbowman-idle-mask.webp"
+        },
+        "walk": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/longbowman-walk.webp",
+          "mask": "units/longbowman-walk-mask.webp"
+        },
+        "attack": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/longbowman-attack.webp",
+          "mask": "units/longbowman-attack-mask.webp"
+        },
+        "die": {
+          "w": 160,
+          "h": 160,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 80.0,
+          "anchorY": 121.6,
+          "scale": 0.8,
+          "file": "units/longbowman-die.webp",
+          "mask": "units/longbowman-die-mask.webp"
+        }
+      }
+    },
+    "chukonu": {
+      "source": "art/units/chukonu.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/chukonu-idle.webp",
+          "mask": "units/chukonu-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/chukonu-walk.webp",
+          "mask": "units/chukonu-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/chukonu-attack.webp",
+          "mask": "units/chukonu-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/chukonu-die.webp",
+          "mask": "units/chukonu-die-mask.webp"
+        }
+      }
+    },
+    "plumedArcher": {
+      "source": "art/units/plumedArcher.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/plumedArcher-idle.webp",
+          "mask": "units/plumedArcher-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/plumedArcher-walk.webp",
+          "mask": "units/plumedArcher-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/plumedArcher-attack.webp",
+          "mask": "units/plumedArcher-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 99.6,
+          "scale": 0.8,
+          "file": "units/plumedArcher-die.webp",
+          "mask": "units/plumedArcher-die-mask.webp"
+        }
+      }
+    },
+    "eagleWarrior": {
+      "source": "art/units/eagleWarrior.py",
+      "actions": {
+        "idle": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/eagleWarrior-idle.webp",
+          "mask": "units/eagleWarrior-idle-mask.webp"
+        },
+        "walk": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/eagleWarrior-walk.webp",
+          "mask": "units/eagleWarrior-walk-mask.webp"
+        },
+        "attack": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/eagleWarrior-attack.webp",
+          "mask": "units/eagleWarrior-attack-mask.webp"
+        },
+        "die": {
+          "w": 128,
+          "h": 128,
+          "frames": 8,
+          "directions": 5,
+          "anchorX": 64.0,
+          "anchorY": 97.7,
+          "scale": 0.8,
+          "file": "units/eagleWarrior-die.webp",
+          "mask": "units/eagleWarrior-die-mask.webp"
+        }
+      }
+    }
+  },
+  "ui": {
+    "source": "art/render_ui_textures.py",
+    "files": [
+      "ui/stone.jpg",
+      "ui/parchment.jpg"
+    ]
+  }
+}
