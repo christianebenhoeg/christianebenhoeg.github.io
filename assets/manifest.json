@@ -353,6 +353,14 @@
           "crest": "units/knight-die-crest.webp",
           "mask": "units/knight-die-mask.webp"
         }
+      },
+      "skins": {
+        "blackened": {
+          "idle": "units/knight-blackened-idle.webp",
+          "walk": "units/knight-blackened-walk.webp",
+          "attack": "units/knight-blackened-attack.webp",
+          "die": "units/knight-blackened-die.webp"
+        }
       }
     },
     "mangonel": {
@@ -1118,5 +1126,77 @@
     "files": [
       "ui/stone.jpg"
     ]
+  },
+  "themes": {
+    "autumn": {
+      "terrain": {
+        "file": "terrain/ground-autumn.jpg"
+      },
+      "scenery": {
+        "oak-a": {
+          "file": "scenery/autumn/oak-a.png",
+          "w": 375,
+          "h": 271,
+          "anchorX": 117.0,
+          "anchorY": 249.8
+        },
+        "oak-b": {
+          "file": "scenery/autumn/oak-b.png",
+          "w": 312,
+          "h": 238,
+          "anchorX": 89.0,
+          "anchorY": 223.5
+        },
+        "pine-a": {
+          "file": "scenery/autumn/pine-a.png",
+          "w": 284,
+          "h": 291,
+          "anchorX": 69.0,
+          "anchorY": 259.7
+        },
+        "pine-b": {
+          "file": "scenery/autumn/pine-b.png",
+          "w": 226,
+          "h": 231,
+          "anchorX": 53.0,
+          "anchorY": 207.8
+        },
+        "bush-a": {
+          "file": "scenery/autumn/bush-a.png",
+          "w": 112,
+          "h": 87,
+          "anchorX": 48.0,
+          "anchorY": 61.8
+        },
+        "bush-b": {
+          "file": "scenery/autumn/bush-b.png",
+          "w": 74,
+          "h": 52,
+          "anchorX": 30.0,
+          "anchorY": 34.8
+        },
+        "rock-a": {
+          "file": "scenery/autumn/rock-a.png",
+          "w": 113,
+          "h": 70,
+          "anchorX": 52.0,
+          "anchorY": 45.8
+        },
+        "rock-b": {
+          "file": "scenery/autumn/rock-b.png",
+          "w": 73,
+          "h": 48,
+          "anchorX": 33.0,
+          "anchorY": 27.8
+        },
+        "rock-c": {
+          "file": "scenery/autumn/rock-c.png",
+          "w": 170,
+          "h": 118,
+          "anchorX": 79.0,
+          "anchorY": 70.8
+        }
+      }
+    }
   }
 }
